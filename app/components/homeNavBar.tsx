@@ -10,6 +10,7 @@ export default function HomeNavBar() {
                 <a href="/auth/login" className="hover:underline hover:text-gray-200 transition duration-300">
                     Login
                 </a>
+                
                 <a href="/auth/register" className="hover:underline hover:text-gray-200 transition duration-300">
                     Register
                 </a>
