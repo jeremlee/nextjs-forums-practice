@@ -1,7 +1,30 @@
-import Image from "next/image";
-import { ExampleMsg } from "./components/example";
+import HomeNavBar from "./components/homeNavBar"
+import Image from "next/image"
+
 
 export default function Home() {
+  return (
+    <>
+      <HomeNavBar />
+      <div className="flex justify-center items-center min-h-screen">
+        <div className="relative text-center">
+          <h1 className="text-white text-3xl font-bold mb-2 -mt-10 bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+            I Can Breathe
+          </h1>
+          <Image 
+            src="/greg.jpg" 
+            alt="Website Logo"
+            width={300}
+            height={300}
+            className="rounded-lg"
+          />
+        </div>
+      </div>
+    </>
+  )
+}
+
+/*export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -23,7 +46,6 @@ export default function Home() {
           </li>
           <li>eskibidi toilet.</li>
         </ol>   
-        <ExampleMsg />
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
@@ -100,4 +122,4 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+} */
